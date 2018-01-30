@@ -209,15 +209,37 @@ h5 {
   font-size: 16px;
   line-height: 18px;
 }
+@media (min-width: 1200px) {
+  .container .main-content {
+    /* Large desktop */
+    font-size: 21px;
+    color: red;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .container .main-content {
+    /* Portrait tablet to landscape and desktop */
+    font-size: 18px;
+    color: blue;
+  }
+}
+@media (max-width: 767px) {
+  .container .main-content {
+    /* Landscape phone to portrait tablet */
+    font-size: 16px;
+    color: purple;
+  }
+}
+@media (max-width: 480px) {
+  .container .main-content {
+    /* Landscape phones and down */
+    font-size: 12px;
+    color: #EB1C68;
+  }
+}
 .container .main-content .top-content {
   display: flex;
   justify-content: space-around;
-}
-@media (max-width: 768px) {
-  .container .main-content .top-content {
-    font-size: 10px;
-    color: red;
-  }
 }
 .container .main-content .middle-img {
   display: block;
